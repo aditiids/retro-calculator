@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  /* whatsup retor world */
-  /* hello*/
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,9 +14,42 @@
       height: 100vh;
       background-color: #000;
     }
+
+    .calculator {
+      position: relative;
+      width: 400px;
+      height: 600px;
+      background-color: #000;
+      border-radius: 20px;
+    }
+
+    
+
+    .button {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .dot-button {
+      left: 150px;
+      top: 500px;
+    }
   </style>
 </head>
 <body>
-  <img src="./assets/Calculator.svg" alt="Retro Calculator Design" style="width: 100%; max-width: 400px;">
+  <div class="calculator">
+    
+
+    <!-- Dot button -->
+    <img src="./assets/Calculator/dot.svg" alt="Dot Button" class="button dot-button" onclick="handleDotClick()">
+  </div>
+
+  <script>
+    function handleDotClick() {
+      alert('Dot button clicked!');
+    }
+  </script>
 </body>
 </html>
