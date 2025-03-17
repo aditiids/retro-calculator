@@ -3,12 +3,12 @@ const path = require('path');
 
 let mainWindow;
 
-app.whenReady().then(() => {
+function createMainWindow() {
   mainWindow = new BrowserWindow({
     width: 400,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
+      preload: path.join(__dirname, 'preload.js'), // NEW: Uses preload script
     },
   });
 
@@ -17,7 +17,9 @@ app.whenReady().then(() => {
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
-});
+}
+
+app.whenReady().then(createMainWindow);
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
