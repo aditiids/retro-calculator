@@ -45,7 +45,7 @@ npm start
 ⸻
 
 ## 🖼️ **Screenshots**
-![Calculator Preview](.src/assets/Calculator.svg)
+![Calculator Preview](https://raw.githubusercontent.com/aditiids/retro-calculator/451222a48f424420ff857596c78ba9601cf767ec/src/assets/Calculator.svg)
 
 
 ⸻
