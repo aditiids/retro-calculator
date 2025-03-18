@@ -45,7 +45,7 @@ npm start
 ⸻
 
 ## 🖼️ **Screenshots**
-![Calculator Preview](./assets/Calculator.svg)
+![Calculator Preview](.src/assets/Calculator.svg)
 
 
 ⸻
